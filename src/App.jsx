@@ -1,52 +1,23 @@
-import StudentProfile from "./components/StudentProfile";
-import EmployeeCard from "./components/EmployeeCard";
-import ProductCard from "./components/ProductCard";
-import MovieDetails from "./components/MovieDetails";
-import CompanyInfo from "./components/CompanyInfo";
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
     return (
         <>
-            <section>
-                <StudentProfile />
-            </section>
+            <Navbar />
 
-            <section>
-                <EmployeeCard />
-            </section>
-
-            <section>
-                <ProductCard />
-            </section>
-
-            <section>
-                <MovieDetails />
-            </section>
-
-            <section>
-                <CompanyInfo />
-            </section>
-
-            <section>
-                <Header />
-            </section>
-
-            <section>
-                <Header />
-                <MainContent />
-                <Footer />
-            </section>
-
-            <section>
-                <Navbar />
-                <HeroSection />
-                <Footer />
-            </section>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+            </Routes>
         </>
     );
 }

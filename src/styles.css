@@ -19,6 +19,42 @@ section {
     background-color: #ffffff;
 }
 
+.banner {
+    margin-top: 20px;
+    padding: 60px 28px;
+    border-radius: 8px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #12343b, #0f766e);
+    text-align: center;
+}
+
+.banner h1 {
+    margin-bottom: 12px;
+    font-size: 40px;
+}
+
+.banner p {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.banner-buttons button {
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 22px;
+    background-color: #ffffff;
+    color: #0f766e;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -66,6 +102,11 @@ nav a {
     font-weight: bold;
 }
 
+.task-bar a.active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 4px;
+}
+
 .site-header a:hover,
 .task-bar a:hover {
     text-decoration: underline;
@@ -97,5 +138,13 @@ nav a {
     .header-nav,
     .task-bar-links {
         flex-wrap: wrap;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
     }
 }
