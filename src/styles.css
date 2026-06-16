@@ -128,6 +128,24 @@ nav a {
     font-weight: bold;
 }
 
+.day3-page {
+    margin-top: 20px;
+}
+
+.day3-page > h1 {
+    margin-bottom: 20px;
+}
+
+.employee-card {
+    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.14);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
 @media (max-width: 600px) {
     .site-header,
     .task-bar {
