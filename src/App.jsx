@@ -13,6 +13,7 @@ import UserCard from "./DAY3/UserCard";
 import Company from "./DAY3/Company";
 import Parent from "./DAY3/PropsDrilling";
 import CourseCard from "./DAY3/CourseCard";
+import Day4 from "./DAY4/Day4";
 
 function App() {
     const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js"];
@@ -95,6 +96,7 @@ function App() {
                         </main>
                     }
                 />
+                <Route path="/day4" element={<Day4 />} />
             </Routes>
         </>
     );
