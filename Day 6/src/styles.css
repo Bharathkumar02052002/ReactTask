@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f4f7fb;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: #ffffff;
+  background: #2563eb;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.secondary {
+  color: #1f2937;
+  background: #e5e7eb;
+}
+
+button.secondary:hover {
+  background: #d1d5db;
+}
+
+.app {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header p {
+  margin: 0 0 6px;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.task-card {
+  min-height: 230px;
+  padding: 20px;
+  border: 1px solid #d8e2ef;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+.task-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.task-card h2 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+
+.task-card p {
+  line-height: 1.5;
+}
+
+.big-value {
+  margin: 10px 0 16px;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.status {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #9a3412;
+  background: #ffedd5;
+  font-weight: 800;
+}
+
+.status.success {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.dark-card {
+  color: #f8fafc;
+  background: #111827;
+  border-color: #334155;
+}
+
+.dark-card .task-number {
+  color: #93c5fd;
+}
+
+.details-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #eef4ff;
+}
+
+@media (max-width: 520px) {
+  .app {
+    width: min(100% - 20px, 1180px);
+    padding: 20px 0;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+}
